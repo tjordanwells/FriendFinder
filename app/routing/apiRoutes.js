@@ -20,11 +20,11 @@ module.exports = function(app) {
 
 			var difference = 0;
 			for (var j = 0; j < userRes.length; j++) {
-				diff += Math.abs(friends[i].scores[j] - userRes[j]);
+				diff += Math.abs(users[i].scores[j] - userRes[j]);
 			}
-			if (diff < totalDifference) {
+			if (difference < totalDiff) {
 
-				totalDiff = diff;
+				totalDiff = difference;
 				match = users[i].name;
 				matchPic = users[i].photo;
 			}
