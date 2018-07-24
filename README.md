@@ -49,7 +49,7 @@ and go to ```localhost:3000``` in your browser
 
 ### Demo
 
-OR demo it online following https://radiant-ridge-21550.herokuapp.com/ - automatic!
+OR demo it online following
 [this](https://radiant-ridge-21550.herokuapp.com/) link.
 
 
