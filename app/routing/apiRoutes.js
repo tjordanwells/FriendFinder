@@ -1,4 +1,4 @@
-var users = require("../data/friends.js");
+var users = require("../data/friends");
 var path = require("path");
 
 module.exports = function(app) {
@@ -7,32 +7,37 @@ module.exports = function(app) {
     });
     
     app.post("/api/friends", function(req, res) {
-        
-        var newUser = req.body;
-        var userRes = newUser.scores
 
-        var match = "";
-        var matchPic = "";
+        var match = {
+			name: "",
+			photo: "",
+		    difference: 100
+		};
 
-        var totalDiff = 1000;
+		var user = req.body;
+		var userScores 	= user.scores;
+        var total = 0;
 
-        for (var i = 0; i < users.length; i++) {
+		for  (var i = 0; i < users.length; i++) {
 
-			var difference = 0;
-			for (var j = 0; j < userRes.length; j++) {
-				diff += Math.abs(users[i].scores[j] - userRes[j]);
+			totalDifference = 0;
+
+			for (var j = 0; j < users[i].scores[j]; j++) {
+
+				total += Math.abs(parseInt(userScores[j]) - parseInt(users[i].scores[j]));
+
+				if (total <= match.difference){
+
+					match.name = users[i].name;
+					match.photo = users[i].photo;
+					match.difference = total;
+				}
 			}
-			if (difference < totalDiff) {
+		}
 
-				totalDiff = difference;
-				match = users[i].name;
-				matchPic = users[i].photo;
-			}
-        }
-            
-        users.push(newUser);
-    
-        res.json({matchName: matchName, matchImage: matchImage});
+		users.push(user);
+
+		res.json(match);
         
     });
 };

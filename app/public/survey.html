@@ -6,7 +6,9 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -20,8 +22,8 @@
         <hr>
         <h3>Question 1</h3>
         <h4>You prefer dive bars to the omnipresent modern speakeasy.</h4>
-        <select class="chosen-select" id="q1">
-            <option selected>Select an Option</option>
+        <select class="select" id="q1">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -31,8 +33,8 @@
         <br><br>
         <h3>Question 2</h3>
         <h4>You love dogs.</h4>
-        <select class="chosen-select" id="q2">
-            <option selected>Select an Option</option>
+        <select class="select" id="q2">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -42,8 +44,8 @@
         <br><br>
         <h3>Question 3</h3>
         <h4>You believe that the capacity to learn and apply language dynamically is an inherent human trait.</h4>
-        <select class="chosen-select" id="q3">
-            <option selected>Select an Option</option>
+        <select class="select" id="q3">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -53,8 +55,8 @@
         <br><br>
         <h3>Question 4</h3>
         <h4>5 is Leslie Knope, 1 is Ron Swanson. Choose wisely.</h4>
-        <select class="chosen-select" id="q4">
-            <option selected>Select an Option</option>
+        <select class="select" id="q4">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -64,8 +66,8 @@
         <br><br>
         <h3>Question 5</h3>
         <h4>You prefer a vacation at the beach over a retreat to the mountains.</h4>
-        <select class="chosen-select" id="q5">
-            <option selected>Select an Option</option>
+        <select class="select" id="q5">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -75,8 +77,8 @@
         <br><br>
         <h3>Question 6</h3>
         <h4>You would agree that AC/DC rewrote the same song 175 times, and that it is, in fact, a great song.</h4>
-        <select class="chosen-select" id="q6">
-            <option selected>Select an Option</option>
+        <select class="select" id="q6">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -86,8 +88,8 @@
         <br><br>
         <h3>Question 7</h3>
         <h4>Baseball is not boring.</h4>
-        <select class="chosen-select" id="q7">
-            <option selected>Select an Option</option>
+        <select class="select" id="q7">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -97,8 +99,8 @@
         <br><br>
         <h3>Question 8</h3>
         <h4>The eighth song on most records is the weakest.</h4>
-        <select class="chosen-select" id="q8">
-            <option selected>Select an Option</option>
+        <select class="select" id="q8">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -108,8 +110,8 @@
         <br><br>
         <h3>Question 9</h3>
         <h4>Question 8 makes no sense.</h4>
-        <select class="chosen-select" id="q9">
-            <option selected>Select an Option</option>
+        <select class="select" id="q9">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -119,8 +121,8 @@
         <br><br>
         <h3>Question 10</h3>
         <h4>Bernie was robbed. The DNC made their bed.</h4>
-        <select class="chosen-select" id="q10">
-            <option selected>Select an Option</option>
+        <select class="select" id="q10">
+            <option value="" disabled="disabled" selected>Select an Option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -128,21 +130,92 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <br><br>
-        <button class="btn btn-lg btn-block btn-primary" type="submit"><i class="far fa-check-circle"></i> Submit</button>
+        <button class="btn btn-lg btn-block btn-dark" id="submit" type="submit" data-toggle="modal" data-target="#modal"><i class="far fa-check-circle"></i> Submit</button>
         <hr>
     </div>
     <footer>
         <div class="container">
             <p>
-                <a href="/api/friends">API Friends List</a>
+                <a href="/api/friends" target="_blank">API Friends List</a>
                  | 
-                <a href="https://github.com/tjordanwells/FriendFinder">Git Hub Repo</a>
+                <a href="https://github.com/tjordanwells/FriendFinder" target="_blank">Git Hub Repo</a>
             </p>
         </div>
     </footer>
-    <div id="results-modal" class="modal fade" role="dialog"></div>
+    <div id="modal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Your Match:</h2>
+                </div>
+                <div class="modal-body">
+                    <h3 id="match"></h3>
+                    <img id="match-pic" src="" alt="Your Best Match">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript">
+
+        $("#submit").on("click", function(event) {
+            // event.preventDefault();
+            // // alert("worked");
+
+
+            function validate() {
+                var isVal = true;
+
+                $(".form-control").each(function() {
+                    if ($(this).val() === "") {
+                        isVal = false;
+                    }
+                });
+
+                $("option").each(function() {
+                    if ($("option").attr("value=") === "") {
+                        isVal = false;
+                    }
+                });
+                return isVal;
+            }
         
-    </script>
+            if (validate()) {
+                var newUser = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                console.log(newUser);
+
+                
+                $.post("/api/friends", newUser, function(data) {
+                
+                    $("#match").text(data.name);
+                    $("#match-pic").attr("src", data.photo);
+                    $("#modal").modal("toggle");
+                });
+            } else {
+                alert("Please finish all fields before submitting form");
+            };
+        });
+
+</script>
 </body>
 </html>
