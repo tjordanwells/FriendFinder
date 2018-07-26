@@ -11,7 +11,7 @@ module.exports = function(app) {
         var match = {
 			name: "",
 			photo: "",
-		    difference: 100
+		    difference: 1000
 		};
 
 		var user = req.body;
