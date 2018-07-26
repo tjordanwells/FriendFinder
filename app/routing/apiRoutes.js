@@ -11,7 +11,7 @@ module.exports = function(app) {
         var match = {
 			name: "",
 			photo: "",
-		    difference: 1000
+		    difference: 10
 		};
 
 		var user = req.body;
@@ -30,7 +30,6 @@ module.exports = function(app) {
 
 					match.name = users[i].name;
 					match.photo = users[i].photo;
-					match.difference = total;
 				}
 			}
 		}
